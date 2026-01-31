@@ -1,0 +1,18 @@
+Problems
+
+1. You buy a call option with strike K=100K = 100
+K=100 for premium C = 5. Describe the payoff at expiration as a function of spot price S_T​. What is your breakeven price? What is your maximum loss?
+
+2. Explain in one or two sentences why a rational investor might simultaneously hold a long stock position and buy a put option on the same stock.
+
+3. A limit buy order at $50 sits on the order book. The current market price is $52. Under what circumstances does your order execute? What is the risk of using limit orders versus market orders?
+
+
+Answers:
+1.  a. Payoff = S_T - K - 5
+    b. break even is when the spot price = $105
+    c. max loss = $5 in the case the call spot price never reaches the strike price, you dont execute the call option (assuming only buy one option)
+
+2.  A rational investor might hold a long stock postion in case the price of the stock increases, then they can buy it for cheap, turn around and sell it at market value, and profit. They might hold a put option in case that stock decreases such that they can bail and minimize costs, so they would hold both to hedge for either scenario
+
+3. When the market price hits $50. A limit order is the max price a user is willing to pay for a stock, whereas a market order is the price of the stock at the current moment. The largest problem I see with limit orders is that they may never execute if the value doesn't drop, missing out on on your greatest ally, time, allowing your stock to increase in value, in an attempt to save some money
