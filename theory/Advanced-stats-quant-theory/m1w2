@@ -1,0 +1,50 @@
+Monday - 
+
+Retention check:
+
+Problem: You listed 15 elements for the σ-algebra in Q1b, missing {5}. Verify that {5} must be in the σ-algebra by showing
+how to construct it from the generating sets {2,4,6} and {1,2,3} using complements, unions, and intersections only.
+
+Answer: 
+
+let F = {1,2,3} and G = {2,4,6}, F union G = A = {1,2,3,4,6} -> A compliment = {5}
+
+Practive Problems:
+
+Let X∼Uniform(0,1)X \sim \text{Uniform}(0,1)
+X∼Uniform(0,1) and Y=X2Y = X^2
+Y=X2.
+
+
+What is E[Y∣σ(X)]\mathbb{E}[Y | \sigma(X)]
+E[Y∣σ(X)]?
+
+What is E[X∣σ(Y)]\mathbb{E}[X | \sigma(Y)]
+E[X∣σ(Y)]?
+
+Explain why one is trivial and one is not.
+
+
+Let X1,X2X_1, X_2
+X1​,X2​ be independent standard normals. Let G=σ(X1+X2)\mathcal{G} = \sigma(X_1 + X_2)
+G=σ(X1​+X2​). Find E[X1∣G]\mathbb{E}[X_1 | \mathcal{G}]
+E[X1​∣G]. *(Hint: symmetry + projection.)*
+
+In 2–3 sentences, explain why E[X∣G]\mathbb{E}[X | \mathcal{G}]
+E[X∣G] must be G\mathcal{G}
+G-measurable. What would go wrong if it weren't?
+
+
+Answers:
+1.  a. if X = [0,1] and Y = X^2 E[Y|X] = X^2
+    b. E[X|Y] = sqrt(Y)
+
+2. if X1 and X2 have the same distribution, then E[X1|G]  = E[X2|G]. if G = X1 + X2, then can say E[X1 + X2|G] = X1 + X2. Therefore, E[x1 + x2|G] = 2E[X1|G] = X1 + X2 which leads us to the conclusion E[X1|G] = (1/2)(X1 + X2)
+
+3. E[X|G] must be measurable because we want the expected value given some condition G, thats all the information available. If the expected value is not measurable, since G is, then the expected value would NOT be given if G, and thus not be valid, as you use information outside of G.
+
+
+
+
+
+
