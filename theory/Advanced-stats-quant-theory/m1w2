@@ -45,6 +45,47 @@ Answers:
 
 
 
+Problems:
+
+(24-Hour Correction) Does Xn=n⋅1(0,1/n)→0X_n = n \cdot \mathbf{1}_{(0,1/n)} \to 0
+Xn​=n⋅1(0,1/n)​→0 almost surely? In probability? Justify.
+
+(48-Hour Review) Smallest σ-algebra containing {a,b}\{a,b\}
+{a,b} on Ω={a,b,c,d}\Omega = \{a,b,c,d\}
+Ω={a,b,c,d}.
+
+Construct a sequence XnX_n
+Xn​ that converges to 0 in probability but NOT almost surely. Explain why your example works.
+
+Let Xn∼Bernoulli(1/n)X_n \sim \text{Bernoulli}(1/n)
+Xn​∼Bernoulli(1/n). Does Xn→0X_n \to 0
+Xn​→0 almost surely? In probability? In L1L^1
+L1? Justify each.
+
+Answers
+1. That function describes a set vertical height / spike that as n increases, gets tinier and tiener in terms of width as 1/n apporaches zero, as X(w) = 1 for 0 < w < 1/n, and 0 everywhere else.
+    - works for almost surely as increase n eventually will pick an outcome, w, that is greater than 1/n and as n goes to infinity, eventually 1 / n will go to 0
+    - works for in probability as the probably = 1/n and as 1/n goes to infinity, the probabily of having 1 decreases eventually to zero
+
+2. the smallest sigma-albrega set, F, is F = {empty set, omega, {a,b}, {c,d}}
+
+3. Correct answer:
+
+Classic example: Typewriter sequence on Ω=[0,1]\Omega = [0,1]
+Ω=[0,1].
+
+Define:
+X1=1[0,1]
+X2​=1[0,1/2]​, X3=1[1/2,1]
+X4​=1[0,1/3]​, X5=1[1/3,2/3] X6=1[2/3,1]
+And so on...
+
+works for in probability because the widths of each interval shrinks such that P(X=1) goes to zero.
+doesnt work for a.s. because we sweep across the whole [0,1] range, rather than a shrinking range, there is always a chance of X(w) = 1 in one of them
+
+4.  P(X=1) = 1/n, and P(X) = 1 - 1/n in a Bernoulli random variable. so as n increases the probability of 1 decreases, similiarly the area under the curve decreases so in probabiliy and L^1 are a yes. a.s. is a no because ∑(n=,∞) ​P(Xn​=1)= ∑(n=1∞) ​1/n = infinity by Borell-cantelli, thus X(w) doesnt converge to 0
+
+
 
 
 
