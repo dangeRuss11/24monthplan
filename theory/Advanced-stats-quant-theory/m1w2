@@ -44,6 +44,9 @@ Answers:
 3. E[X|G] must be measurable because we want the expected value given some condition G, thats all the information available. If the expected value is not measurable, since G is, then the expected value would NOT be given if G, and thus not be valid, as you use information outside of G.
 
 
+----------------------------------------------------------------------------------------------------------------------------------
+
+Tuesday -
 
 Problems:
 
@@ -84,6 +87,57 @@ works for in probability because the widths of each interval shrinks such that P
 doesnt work for a.s. because we sweep across the whole [0,1] range, rather than a shrinking range, there is always a chance of X(w) = 1 in one of them
 
 4.  P(X=1) = 1/n, and P(X) = 1 - 1/n in a Bernoulli random variable. so as n increases the probability of 1 decreases, similiarly the area under the curve decreases so in probabiliy and L^1 are a yes. a.s. is a no because ∑(n=,∞) ​P(Xn​=1)= ∑(n=1∞) ​1/n = infinity by Borell-cantelli, thus X(w) doesnt converge to 0
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Wednsday - 
+
+Problems:
+(48-Hour Review) Find E[X∣σ(X+Y)]\mathbb{E}[X | \sigma(X + Y)]
+E[X∣σ(X+Y)] where X,YX, Y
+X,Y are i.i.d. Uniform(0,1).
+
+State the Strong Law of Large Numbers precisely. What mode of convergence does it guarantee?
+Let X1,X2,...X_1, X_2, ...
+X1​,X2​,... be i.i.d. with E[Xi]=5\mathbb{E}[X_i] = 5
+E[Xi​]=5 and Var(Xi)=4\text{Var}(X_i) = 4
+Var(Xi​)=4. Using the CLT, approximate P(Xˉ100>5.4)\mathbb{P}(\bar{X}_{100} > 5.4)
+P(Xˉ100​>5.4).
+
+In 2-3 sentences: Why does CLT give convergence in distribution rather than convergence in probability?
+
+
+Answers:
+
+1. X = Y thus by symmetry, E[X|X+Y] = E[Y|X+Y]
+
+thus E[X+Y|X+Y] = X + Y
+
+so E[X|sigma(X+Y)] is the same as E[X] + E[Y] where Y = X 
+
+therefore 2E[X|simga(X+Y)] = X + Y = (X+Y) / 2
+
+2. the strong law of large numbers (lln) states that as n apporaches infinity, the same mean will converge
+on the population mean, or exepcted value of the population. It guarantees almost sure convergence as the probability of the same mean
+approaching the population mean is 1.
+
+3. mu = 5, var = 4, n = 100
+
+since assume CLT, X ~ N(mu, var / n) thus var = 4/100 and std = sqrt(4/100) = .2
+
+we can find the z - score, or how many stds a raw data point is from the mean to calculate the distance of the data point from the mean.
+
+Z = (x - mu / std) therefore Z = 5.4 -5 / .2 = 2
+
+using zscore lookup table, find that P(X_100 > 5.4) = .023
+
+
+4. CLT, or the central limit theorem states that given enought independent random samples, the distribution will follow a normoal one.
+CLT gives convergence in distribution because as number of samples, n, increase, then the probability of being far from the 
+population mean decreases and approaches 0.
+
+
 
 
 
